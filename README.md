@@ -1,6 +1,6 @@
 README
 ------
 
-New project for Zettheme Inc.
+July version for Zettheme Inc.
 
-Oleg G.Kapranov 11 July 2015.
+Oleg G.Kapranov 20 July 2015.
