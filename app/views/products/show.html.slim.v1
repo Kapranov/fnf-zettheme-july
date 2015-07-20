@@ -1,0 +1,171 @@
+br
+.row.wrapper.animated.fadeInRight
+  .col-lg-8
+    .ibox.float-e-margins
+      .ibox-title
+        h5
+        .ibox-tools
+          a.collapse-link
+            i.fa.fa-chevron-up
+          a.dropdown-toggle[data-toggle="dropdown" href="#"]
+            i.fa.fa-wrench
+          ul.dropdown-menu.dropdown-user
+            li
+              a[href="#"] Config option 1
+            li
+              a[href="#"] Config option 2
+          a.close-link
+            i.fa.fa-times
+      .ibox-content
+        .row
+          .col-sm-10
+            p
+              strong = t('Name')
+              | :
+              '
+              = @product.name
+            p
+              strong = t('Category')
+              | :
+              '
+              = @product.category
+            p
+              strong = t('Product sku')
+              | :
+              '
+              = @product.sku
+            p
+              strong = t('Description')
+              | :
+              '
+              = @product.description.html_safe
+            p
+              strong = t('Short description')
+              | :
+              '
+              = @product.short_description.html_safe
+            p
+              - if @product.active == true
+                strong = t('Active')
+                | :
+                '
+                span.label.label-primary = t('Enabled')
+              - else
+                strong = t('Active')
+                | :
+                '
+                span.label.label-danger = t('Disabled')
+            p
+              strong = t('Weight')
+              | :
+              '
+              = @product.weight
+              '
+              strong = t('Price')
+              | :
+              '
+              = number_to_currency @product.price
+              '
+              strong = t('Cost price')
+              | :
+              '
+              = number_to_currency @product.cost_price
+            p
+              - if @product.featured == true
+                strong = t('Featured')
+                | :
+                '
+                span.label.label-success = t('Done')
+              - else
+                strong = t('Featured')
+                | :
+                '
+                span.label.label-warning = t('None')
+
+              |
+              '
+              - if @product.stock_control == true
+                strong = t('Stock control')
+                | :
+                '
+                span.label.label-success = t('Done')
+              - else
+                strong = t('Stock control')
+                | :
+                '
+                span.label.label-warning = t('None')
+            p
+              strong = t('Upload')
+              | :
+              '
+              - @product.uploads.each do |upload|
+                = attachment_image_tag(upload, :avatar, :fill, 60, 60)
+            p
+              strong = t('Images and Documents')
+              | :
+              '
+              - @product.attachments.each do |attachment|
+                = attachment_image_tag(attachment, :attach, :fill, 60, 60)
+                small
+                  ul
+                    li
+                      = attachment.attach_content_type
+                    li
+                      = attachment.attach_filename
+                    li
+                      = attachment.attach_size
+                      '
+                      | Bytes
+
+  .col-lg-4
+    = link_to t('Edit'), edit_product_path(@product), class: "btn btn-info"
+    '
+    = link_to t('Back'), products_path, class: "btn btn-info"
+
+/p#notice = notice
+/
+/p
+  strong User:
+  = @product.user
+/p
+  strong Name:
+  = @product.name
+/p
+  strong Sku:
+  = @product.sku
+/p
+  strong Description:
+  = @product.description.html_safe
+/p
+  strong Short description:
+  = @product.short_description.html_safe
+/p
+  strong Active:
+  = @product.active
+/p
+  strong Weight:
+  = @product.weight
+/p
+  strong Price:
+  = @product.price
+/p
+  strong Cost price:
+  = @product.cost_price
+/p
+  strong Featured:
+  = @product.featured
+/p
+  strong Stock control:
+  = @product.stock_control
+/p
+  strong Category:
+  = @product.category
+/p
+  - @product.uploads.each do |upload|
+    = attachment_image_tag(upload, :avatar, :fill, 100, 100)
+/p
+
+
+/= link_to 'Edit', edit_product_path(@product)
+/'|
+/= link_to 'Back', products_path

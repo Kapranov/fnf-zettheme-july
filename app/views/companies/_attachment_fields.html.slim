@@ -1,0 +1,9 @@
+.row.well.nested-fields.animated.fadeInDown
+  .col-lg-10
+    - if @company.attachments.present?
+      = f.input :attach_content_type, label: false, disabled: true
+      = f.input :attach_filename, label: false, disabled: true
+    = f.file_field :attach, direct: true, presigned: true, progress_class: 'progress-bar-danger'
+  .col-lg-2
+    .links.animated.flash
+      = link_to_remove_association '<i class="fa fa-trash size-26"></i>'.html_safe, f

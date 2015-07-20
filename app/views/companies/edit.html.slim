@@ -1,0 +1,20 @@
+.row.wrapper.border-bottom.white-bg.page-heading2
+  .col-lg-8
+    h2 = t('Editing companies')
+    ol.breadcrumb
+      li
+        a[href="#{url_for :controller => 'companies', :action => 'index'}"] = t('Companies')
+      li.active
+        strong = t('Edit Company')
+    br
+
+== render 'form'
+
+
+/h1 Editing company
+
+/== render 'form'
+
+/= link_to 'Show', @company
+/'|
+/= link_to 'Back', companies_path

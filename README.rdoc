@@ -1,0 +1,655 @@
+README
+------
+
+[Ruby API]
+http://ruby.bastardsbook.com/chapters/ifelse/
+
+[API Hogs Inc.]
+http://api-hogs.io/#/team
+https://github.com/OpakAlex
+
+[Inspina Admin Page]
+http://webapplayers.com/inspinia_admin-v2.2/
+
+[Rails setup hourly backups for your production server]
+http://meskyanichi.github.io/backup/v4/
+http://meskyanichi.github.io/backup/v4/installation/
+https://gorails.com/guides/hourly-production-server-database-and-file-backups
+
+[Rails API]
+http://guides.rubyonrails.org/layouts_and_rendering.html
+http://ember.vicramon.com/creating-the-rails-api
+
+[Custom 404 error page with Rails 4]
+https://mattbrictson.com/dynamic-rails-error-pages
+http://wearestac.com/blog/dynamic-error-pages-in-rails
+http://thepugautomatic.com/2014/08/404-with-rails-4/
+http://easyactiverecord.com/blog/2014/08/19/redirecting-to-custom-404-and-500-pages-in-rails/
+http://stackoverflow.com/questions/19103759/rails-4-custom-error-pages-for-404-500-and-where-is-the-default-500-error-mess
+
+[Rails and I18n]
+http://www.sitepoint.com/go-global-rails-i18n/
+
+[FFaker data]
+# http://ricostacruz.com/cheatsheets/ffaker.html
+# http://bl.ocks.org/rstacruz/2238025
+# http://apionrails.icalialabs.com/book/chapter_six
+# https://github.com/crossroads/crm_super_tags/raw/master/spec/fixtures/customfields.yml
+
+[Devise authentication]
+https://www.railstutorial.org/book/log_in_log_out#sec-logging_in
+https://blog.8thlight.com/mike-knepper/2014/07/01/stubbing-authentication-and-authorization-in-controller-specs.html
+http://www.rubydoc.info/github/plataformatec/devise/
+http://railsapps.github.io/rails-authorization.html
+http://stackoverflow.com/questions/25272911/rails-4-user-roles-and-permissions
+http://astockwell.com/blog/2014/03/polymorphic-associations-in-rails-4-devise/
+http://astockwell.com/blog/2014/07/polymorphic-associations-in-rails-4-part-2/
+http://www.itbakery.net/rail4-devise-authentication-part2-username-or-email/
+http://stackoverflow.com/questions/6557311/no-route-matches-users-sign-out-devise-rails-3
+You must also include <%= javascript_include_tag :defaults %> in your layout file application.html.erb
+
+[Using rolify with Devise and Authority]
+https://github.com/RolifyCommunity/rolify
+https://github.com/RolifyCommunity/rolify/wiki/Using-rolify-with-Devise-and-Authority
+http://stackoverflow.com/questions/tagged/rolify
+http://stackoverflow.com/questions/11306072/rails-rolify-add-default-role-on-creation
+http://stackoverflow.com/questions/31064695/rails-4-rolify-gem-user-roles-arent-being-updated-via-ui
+http://stackoverflow.com/questions/30658426/rails-rolify-gem-assigning-an-admin-role-to-all-users-in-a-table
+http://stackoverflow.com/questions/26875902/allow-users-to-select-role-from-registration-form-with-devise-and-rolify
+http://stackoverflow.com/questions/26117158/how-to-assign-roles-to-a-user-with-devise-cancan-and-rolify
+http://stackoverflow.com/questions/25354993/how-does-rolify-keep-track-of-roles
+
+
+[Creating a Rails admin panel from scratch, part 1: The dashboard - See more at:]
+http://everydayrails.com/2012/07/31/rails-admin-panel-from-scratch.html
+http://everydayrails.com/2012/08/07/rails-admin-panel-from-scratch-2.html
+http://everydayrails.com/2012/08/19/rails-admin-panel-from-scratch-3.markdown.html
+http://everydayrails.com/2012/03/19/testing-series-rspec-models-factory-girl.html
+http://everydayrails.com/2012/04/07/testing-series-rspec-controllers.html
+http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html
+http://rubyjunky.com/building-admin-from-the-rails-scaffold.html
+http://rubyjunky.com/creating-rails-admin-pages-from-scratch-part-1-index.html
+
+[Upload File Refile]
+https://github.com/refile/refile
+https://www.florentferry.me/blog/2015/07/05/refile-multiple-file-uploads/
+https://www.florentferry.me/blog/2015/01/08/uploader-image-avec-refile/
+http://stackoverflow.com/questions/28795992/pundit-authorizaton-for-files-uploaded-with-refile-gem
+https://github.com/excid3/gorails-episode-36
+https://github.com/excid3/gorails-episode-36/tree/refile-js
+https://gorails.com/episodes/upload-progress-with-refile-javascript
+http://jasontruluck.org/blog/bootstrap/refile/images/ui/2015/04/07/Adding-Bootstrap-Progress-Bars-for-Refile.html
+http://brain64bit.github.io/blog/2015/03/03/progressbar-upload-with-refile-gem/
+https://github.com/jasontruluckblog/refile-bootstrap
+https://github.com/refile/refile/issues/6
+http://stackoverflow.com/questions/31226156/refile-gem-multiple-file-uploads
+http://stackoverflow.xluat.com/questions/31226156/refile-gem-multiple-file-uploads
+https://github.com/refile/refile-mini_magick
+https://github.com/mdesantis/refile-validators
+https://github.com/lserman/refile-backgrounder
+https://github.com/JoshuaNovak919/bootstrap_refile
+https://github.com/shaicoleman/refile-demo
+https://github.com/takeyuweb/refile-sample
+https://github.com/STUDITEMPS/jobmensa_assets
+https://github.com/jason-zeng/refile-multiple-upload
+https://github.com/moviepilot-de/refile-filesystem-hashed
+https://github.com/florentferry/refile_multiple_file_uploads
+https://github.com/rscircus/drhousemeister
+
+[Rails Money and numeric fields]
+http://stackoverflow.com/questions/1019939/ruby-on-rails-best-method-of-handling-currency-money
+https://richonrails.com/articles/active-record-enums-in-ruby-on-rails-4-1
+
+[Rails Nested dynamic fields]
+https://github.com/m-Peter/nested-form-examples
+http://railscasts.com/episodes/197-nested-model-from-part-2
+http://www.liooo.engineer/blog/2014/11/22/building-multiple-file-upload-form-in-rails-way/
+https://github.com/Liooo/carrierwave-cocoon-file-upload-app-demo
+https://github.com/nathanvda/cocoon
+https://github.com/nathanvda/cocoon_simple_form_demo
+https://github.com/saratovsource/cocoon_limiter
+http://cocoon-limiter.herokuapp.com/
+http://stackoverflow.com/questions/18948017/best-way-to-handle-data-attributes-in-slim
+http://stackoverflow.com/questions/27032169/multiple-nested-fields-using-jquery
+http://sleekd.com/general/adding-multiple-images-to-a-rails-model-with-paperclip/
+http://stackoverflow.com/questions/2280151/ruby-on-rails-nested-dynamic-fields
+http://michaelwelburn.com/2014/02/10/rails-4-nested-object-creation-and-parent-presence-validation-error/
+http://www.jjask.com/111618/how-to-dynamically-add-nested-attributes-rails-with-jquery
+https://github.com/funionnn/cocoon
+https://github.com/Haneczka/cocoon
+https://github.com/jdwolk/cocoon_example
+https://github.com/helmerj/cocoon_sample
+https://github.com/preitybankar/cocoon_demo
+https://github.com/woto/cocoon_destroy
+https://github.com/dcollazo/cocoon_recipe
+https://github.com/woto/cocoon-self_join-form
+https://github.com/pwalvarado/complex_forms_with_cocoon
+https://github.com/vtamara/cocoon-caso-presponsable
+https://github.com/nathanvda/formtastic-cocoon-client-side-validations-demo
+https://github.com/bhagathreddy123/recipe_box
+https://github.com/gabyshev/cocoon_example_increasing_number_of_fields
+https://github.com/Lazzi/cocoon_nested_form_client_side_validations
+https://github.com/RJNY/cook-book
+https://github.com/JulesAbrams/RecipeBox
+https://github.com/JuanFragoso/recipe-box
+https://github.com/activeadmin/activeadmin/wiki/showing-an-uploaded-image-in-the-form
+http://viget.com/extend/8-insanely-useful-activeadmin-customizations
+
+[Rails Shopping Charts]
+http://www.sitepoint.com/build-online-store-rails/
+https://github.com/2Checkout/2checkout-rails-tutorial
+https://richonrails.com/articles/building-a-shopping-cart-in-ruby-on-rails
+https://github.com/RichIsOnRails/ShoppingCartExampleApp
+http://www.jaredrader.com/blog/2014/08/24/a-shopping-cart-for-your-web-app
+
+https://github.com/vyshnevska/iShop
+https://github.com/tandysean/depotApp
+https://github.com/tamouse/example-railsmn-shopping-cart-modeling-walkthrough
+https://github.com/jjlee5266/Ecommerce_app
+https://github.com/juansgaitan/ShoppingCart.rb
+
+https://www.wepay.com/developer/resources/wefarm-tutorial
+http://wefarm.herokuapp.com/
+https://github.com/wepay/wefarm
+https://github.com/wepay/wecrowd-rails
+http://wecrowd.wepay.com
+https://github.com/wepay/wepay-rails
+https://github.com/wepay/signer-ruby
+https://wepay.github.io/signer-ruby/
+
+https://github.com/spree/spree
+http://www.shopify.com/
+https://github.com/piggybak/piggybak
+https://github.com/nimbleshop/nimbleshop
+http://www.ror-e.com/
+https://github.com/potionfactory/potionstore/
+https://github.com/crowdint/acts_as_shopping_cart
+https://github.com/potionfactory/potionstore/
+
+[Internationalization in Rails app with Globalize3]
+http://www.sitepoint.com/go-global-rails-i18n/
+https://github.com/globalize/globalize
+https://github.com/bithavoc/multilang-hstore
+http://blog.robustastudio.com/ruby/rails/localize-model-fields-using-rails/
+http://www.synbioz.com/blog/internationalization_with_globalize
+http://dhampik.ru/blog/javascript-i18n-rails
+http://blog.crowdint.com/2011/02/15/internationalizing-your-rails-app.html
+http://zargony.com/2009/01/09/selecting-the-locale-for-a-request
+http://www.leighhalliday.com/adding-translations-to-your-rails-website
+http://stackoverflow.com/questions/6683366/i18n-for-select-boxes
+http://stackoverflow.com/questions/14275372/change-locale-with-a-select-tag-in-a-rails-3-app
+http://stackoverflow.com/questions/8390394/switch-language-with-url-rails-3
+http://stackoverflow.com/questions/13665997/can-you-change-label-display-names-when-using-simple-form-in-rails
+http://www.whatx.net/questions/29730015/change-locale-in-rails-outside-session
+http://www.whatx.net/questions/29883712/rails-switch-from-translated-url
+http://www.coderjunk.com/CyVVgPqkPq/how-to-i18n-dropdown-menu-populated-from-database-table.html
+http://stackoverflow.com/questions/30523625/switch-locale-on-current-page-rails
+
+<% Globalize.with_locale(:en) do %>
+https://blog.bmonkeys.net/2014/be-careful-with-params-merge
+  <%= render "my_translated_partial" %>
+<% end %>
+
+bash> rails g migration translate_properties
+
+pry> I18n.locale = :en
+pry> => "et"
+pry> I18n.locale = :ru
+pry> => "Привет"
+pry> I18n.locale = :uk
+pry> => "et"
+pry> Category.first.update_attribute(:name, "Привіт")
+
+pry> I18n.locale = :en
+pry> Category.first.description
+=> "Carles vice vegan scenester DIY twee Austin Cosby Sweater farm-to-table ethical"
+pry> I18n.locale = :ru
+=> "Carles vice vegan scenester DIY twee Austin Cosby Sweater farm-to-table ethical"
+18n.locale = :uk
+=> "Carles vice vegan scenester DIY twee Austin Cosby Sweater farm-to-table ethical"
+pry> Category.first.update_attribute(:description, "Зірки написали листа Кемерону на захист ВВС")
+=> "Зірки написали листа Кемерону на захист ВВС"
+
+
+http://www.synbioz.com/blog/internationalization_with_globalize
+Product.where(:name => 'something')
+
+Product.with_translations('en').where('product_translations.name' => 'something')
+Product.find_by_name('something')
+
+[Dashboards and widgets]
+https://github.com/gottfrois/dashing-rails
+https://github.com/Kapranov/lugatexboard_rails
+http://shopify.github.io/dashing/
+http://dashingdemo.herokuapp.com/sample
+http://dashingdemo.herokuapp.com/sampletv
+https://github.com/Shopify/dashing/wiki/Additional-Widgets
+https://github.com/Shopify/dashing/wiki
+https://github.com/Shopify/dashing/wiki/Additional-Widgets
+https://github.com/warrenguy/dashing-statuspageio
+https://github.com/jessepinho/dashing-graph
+https://github.com/DanielHeath/dashing-db
+https://github.com/brettbevers/dashingdemo
+https://github.com/craigcoles/lastfm-widget
+https://github.com/alivanov/dashing_widgets
+https://github.com/donny/awsmap
+https://github.com/dragonai/dashing_widgets
+https://github.com/davefp/dashing-weather
+https://github.com/johnotander/dashing_json
+https://github.com/visibilityspots/dashing-scripts
+https://github.com/parthibanloganathan/dashing_widgets
+https://github.com/taskrabbit/dashing-screenshots
+https://github.com/tes5884/dashing_configs
+https://github.com/csu/dashing-widgets
+https://github.com/wolfspyre/dashing-snmpgraph
+https://github.com/osu-sig/Birthday-Widget
+https://github.com/bencolon/dashing_background_status
+https://github.com/jipumarino/dashing-server-monitor
+https://github.com/GingerN1nja/Dashing-Stock-Graph
+https://github.com/osu-sig/Google-Calendar-Widget
+https://github.com/urfolomeus/widge
+https://github.com/SocialbitGmbH/DashingBitBucketCommitYearCountWidget
+https://github.com/SocialbitGmbH/DashingBitBucketRepositoryCountWidget
+https://github.com/SocialbitGmbH/DashingBitBucketCommitCountWidget
+https://github.com/kmckee/dashdate
+https://github.com/donny/appledev
+https://github.com/markrothwell/service_status
+https://github.com/PareidoliaX/ntile_widget
+https://github.com/derrybarry/nagios-check_MK
+
+https://github.com/rickcid/learning-dashboard
+https://github.com/PareidoliaX/ntile_widget
+https://github.com/forsbergplustwo/partner-metrics-for-shopify
+https://github.com/matiasbattocchia/panel-on-rails
+https://github.com/urfolomeus/widge
+https://github.com/skrobul/cineworld-dashboard
+https://github.com/fdietz/team_dashboard
+https://github.com/prometheus/promdash
+https://github.com/intridea/houston
+https://github.com/flameman404/stock-dashboard
+http://al3xandr3.github.io/dashboards.html
+
+[Roles and Permissions]
+https://github.com/RailsApps/rails-prelaunch-signup
+https://github.com/RailsApps/rails-recurly-subscription-saas
+https://github.com/RailsApps/rails3-bootstrap-devise-cancan
+http://railscasts.com/episodes/154-polymorphic-association
+http://railscasts.com/episodes/154-polymorphic-association-revised
+https://github.com/railscasts/154-polymorphic-association
+http://guides.rubyonrails.org/association_basics.html#polymorphic-associations
+https://github.com/jashmenn/activeuuid
+http://johnkolovos.blogspot.com/2014/10/rails-4-uuid.html
+http://andrzejonsoftware.blogspot.com/2013/12/decentralise-id-generation.html
+
+https://www.railstutorial.org/book/modeling_users
+http://stackoverflow.com/questions/19292645/ruby-on-rails-creating-a-profile-when-user-is-created
+http://stackoverflow.com/questions/4307743/profile-model-for-devise-users
+http://railscasts.com/episodes/286-draper?language=ru&view=asciicast
+http://6ftdan.com/allyourdev/2014/08/01/manual-polymorphic-creation-in-rails/
+http://6ftdan.com/allyourdev/2015/02/10/rails-polymorphic-models/
+http://www.ytutorial.com/tutorials/32-adding-profile-page
+https://github.com/RailsApps/rails-devise-roles
+http://railsapps.github.io/tutorial-rails-subdomains.html
+http://www.widecodes.com/0iJVggkUXV/ruby-on-rails-create-user-profile-in-rails.html
+http://www.peoplecancode.com/en/paths/4/tutorials/listing-users-profile-and-index-of-profiles
+http://karolgalanciak.com/blog/2014/03/03/test-driven-rails-part-2/
+http://stackoverflow.com/questions/19191955/rails-devise-separate-edit-registration-form-into-two-forms
+
+
+https://github.com/edap/authuser
+http://edapx.com/2012/04/18/authorization-and-user-management-in-rails/
+
+Rails 4 out-of-the-box is that you don't need to include the
+ActiveUUID::UUID module in the models and when you create the migration,
+instead of using id: false you would use id: :uuid:
+
+class CreateStories < ActiveRecord::Migration
+  def change
+    create_table :stories, id: :uuid do |t|
+      # To handle the relationship with the authors table
+      t.uuid :author_id
+
+      t.timestamps
+    end
+  end
+end
+http://blog.arkency.com/2014/10/how-to-start-using-uuid-in-activerecord-with-postgresql/
+http://stackoverflow.com/questions/703035/when-are-you-truly-forced-to-use-uuid-as-part-of-the-design
+https://github.com/RolifyCommunity/rolify/wiki/FAQ
+https://github.com/RolifyCommunity/rolify
+https://coderwall.com/p/eudimq/rails-devise-cancan-rolify-and-user-company-role
+https://github.com/vmarcetic/test/blob/master/db/schema.rb
+http://qiita.com/keisukemizuno@github/items/9c079c275118fa7a0f36
+https://github.com/RolifyCommunity/rolify/wiki/Using-rolify-with-Devise-and-Authority
+http://www.austinstory.com/pundit-and-rolify-testing-with-rails/
+http://www.quora.com/How-to-integrate-rolify-to-devise
+http://programming.nullanswer.com/question/28711984
+https://github.com/CanCanCommunity/cancancan
+http://stackoverflow.com/questions/16111415/rails-rolify-how-to-test-for-multiple-roles
+http://stackoverflow.com/questions/27691568/rolify-and-rails-4-role-management
+http://stackoverflow.com/questions/20929644/how-do-you-add-roles-rolify-using-cancan-and-devise
+http://stackoverflow.com/questions/9767799/how-to-access-fields-in-has-many-belongs-to-association
+http://stackoverflow.com/questions/7643157/rails-3-how-to-make-sure-group-has-one-user-role-groupleader
+https://coderwall.com/p/eudimq/rails-devise-cancan-rolify-and-user-company-role
+http://erniemiller.org/2008/09/30/easy-role-based-authorization/
+
+[Organise ActiveRecord model into a tree structure]
+https://github.com/istana/ancestry-rails4]
+
+[Rails projects for example]
+https://github.com/paciorky/paciorky.git
+https://github.com/Loremaster/Chirch_app.git
+https://github.com/mac-r/l6.git
+https://github.com/nukomeet/coworfing.git
+https://github.com/bartezic/travel.git
+https://github.com/bartezic/wed.git
+
+[Screencasts for Ruby on Rails Developers]
+https://gorails.com/setup/ubuntu/15.04
+https://gorails.com/deploy/ubuntu/14.04
+https://gorails.com/guides/hourly-production-server-database-and-file-backups
+https://gorails.com/guides/rotating-rails-production-logs-with-logrotate
+https://gorails.com/guides/setting-up-rails-4-with-mongodb-and-mongoid
+https://gorails.com/guides/using-vagrant-for-rails-development
+https://gorails.com/forum
+https://gorails.com/episodes/comments-with-polymorphic-associations
+https://gorails.com/episodes/pdf-receipts
+https://gorails.com/episodes/rails-assets
+https://gorails.com/episodes/including-third-party-javascript-libraries-with-rails
+https://gorails.com/episodes/my-development-environment-for-ruby-on-rails
+https://gorails.com/episodes/newsletter-sign-up
+https://gorails.com/episodes/subdomains-and-multi-tenancy-from-scratch
+https://gorails.com/episodes/multitenancy-with-apartment
+https://gorails.com/episodes/soft-delete-with-paranoia
+https://gorails.com/episodes/refactoring-controller-methods
+https://gorails.com/episodes/upload-progress-with-refile-javascript
+https://gorails.com/episodes/file-uploads-with-refile
+https://gorails.com/episodes/api-tokens-with-devise-token-authenticatable
+https://gorails.com/episodes/forms-with-multiple-submit-buttons
+https://gorails.com/episodes/omniauth-twitter-sign-in
+https://gorails.com/episodes/forum-time-zones-with-local_time
+https://gorails.com/episodes/forum-search-with-ransack
+https://gorails.com/episodes/forum-notification-emails-and-previews
+https://gorails.com/episodes/forum-nested-attributes-and-fields-for
+https://gorails.com/episodes/forum-routes
+https://gorails.com/episodes/forum-architecture
+https://gorails.com/episodes/liking-posts
+https://gorails.com/episodes/consuming-an-api-using-httparty-and-creating-a-gem
+https://gorails.com/episodes/authorization-with-pundit
+https://gorails.com/episodes/rails-4-2-introduction
+https://gorails.com/episodes/authorization-with-cancancan
+https://gorails.com/episodes/a-look-into-routing
+https://gorails.com/episodes/jquery-ujs-and-ajax
+https://gorails.com/episodes/button-loading-animations-with-jquery-ujs
+https://gorails.com/episodes/understanding-semantic-versioning
+https://gorails.com/episodes/sending-emails-with-mandrill
+https://gorails.com/episodes/keeping-track-with-annotate
+https://gorails.com/episodes/user-authentication-with-devise
+https://gorails.com/episodes/file-uploading-with-carrierwave
+https://gorails.com/episodes/pagination-with-will-paginate
+https://gorails.com/episodes/pretty-urls-with-friendly-id
+https://gorails.com/episodes/debugging-with-better-errors
+https://gorails.com/episodes/styling-with-bootstrap-sass
+https://gorails.com/episodes/named-scopes-with-activerecord-merge
+https://gorails.com/episodes/sending-data-between-controllers-and-views
+https://gorails.com/episodes/the-params-hash
+https://gorails.com/episodes/environment-variables
+
+https://richonrails.com/articles/page-tab-visibility
+https://richonrails.com/articles/building-a-shopping-cart-in-ruby-on-rails
+https://richonrails.com/articles/hashing-data-in-ruby
+https://richonrails.com/articles/pagination-with-kaminari
+https://richonrails.com/articles/generating-random-data-in-ruby-on-rails
+https://richonrails.com/articles/ip-geolocation-in-ruby-on-rails
+https://richonrails.com/articles/getting-a-user-s-gravatar
+https://richonrails.com/articles/adding-social-sharing-buttons-to-any-site-using-html
+https://richonrails.com/articles/adding-social-sharing-buttons-to-your-rails-app
+https://richonrails.com/articles/charting-with-chartkick
+https://richonrails.com/articles/active-record-enums-in-ruby-on-rails-4-1
+https://richonrails.com/articles/action-mailer-previews-in-ruby-on-rails-4-1
+https://richonrails.com/articles/sitemaps-in-ruby-on-rails
+https://richonrails.com/articles/basic-subdomains-in-ruby-on-rails
+https://richonrails.com/articles/basic-file-and-directory-operations-in-ruby
+https://richonrails.com/articles/polymorphic-associations-in-rails
+https://richonrails.com/articles/stashing-your-changes-in-git
+https://richonrails.com/articles/finding-an-element-using-jquery-and-another-attribute
+https://richonrails.com/articles/seeding-your-database-with-seed-fu
+https://richonrails.com/articles/friendlyid-and-rails-4
+https://richonrails.com/articles/create-friendlier-looking-urls-with-friendlyid
+https://richonrails.com/articles/working-with-ruby-arrays
+https://richonrails.com/articles/working-with-ruby-hashes
+https://richonrails.com/articles/rails-model-generator-shortcuts
+https://richonrails.com/articles/basic-ajax-in-ruby-on-rails
+https://richonrails.com/articles/currency-validation-in-ruby-on-rails
+https://richonrails.com/articles/renaming-a-database-column-in-ruby-on-rails
+https://richonrails.com/articles/getting-shipping-costs-with-activeshipping
+https://richonrails.com/articles/lesser-known-rails-generate-options
+https://richonrails.com/articles/building-a-simple-rake-task
+https://richonrails.com/articles/sending-email-using-the-mail-gem
+https://richonrails.com/articles/getting-started-with-ckeditor
+https://richonrails.com/articles/adding-tinymce-to-your-rails-application
+https://richonrails.com/articles/determine-whether-an-activerecord-object-is-a-new-record-or-not
+https://richonrails.com/articles/getting-started-with-will-paginate
+https://richonrails.com/articles/getting-started-with-jbuilder
+https://richonrails.com/articles/rounding-numbers-in-ruby
+https://richonrails.com/articles/rendering-static-html-files-with-layout
+https://richonrails.com/articles/currency-formatting-in-ruby-on-rails-views
+
+
+[Organise ActiveRecord model into a tree structure]
+https://github.com/stefankroes/ancestry
+http://kbarrett.com/blog/2013/05/28/rails-parent-child.html
+http://www.leighhalliday.com/tree-structures-in-your-rails-models
+http://asciicasts.com/episodes/262-trees-with-ancestry
+http://everydayrails.com/2010/11/16/rails-ancestry-tree.html
+http://www.keenertech.com/docs/presentations/Rails_LiveTree.pdf
+http://info.pagnis.in/acts_as_list/
+http://easyactiverecord.com/blog/2014/11/11/sorting-and-reordering-lists-with-the-actsaslist-gem/
+http://qiita.com/NAKANO_Akihito/items/d42a6ceae40933af2352
+http://haspermalink.org/
+http://stackoverflow.com/questions/6559323/creating-seo-friendly-url-from-a-string
+https://github.com/olkarls/has_permalink
+
+[Active Records Session Store extracted from Rails ]
+http://dev.housetrip.com/2014/01/14/session-store-and-security/
+https://github.com/rails/activerecord-session_store
+http://www.justinweiss.com/blog/2015/03/17/how-rails-sessions-work/
+http://stackoverflow.com/questions/2588241/rails-sessions-current-practices
+http://stackoverflow.com/questions/17655744/rails-4-0-rake-dbsessionscreate
+
+
+Oleg G.Kapranov 3 July 2015.
+
+https://richonrails.com/
+
+https://coderwall.com/p/eudimq/rails-devise-cancan-rolify-and-user-company-role
+https://github.com/vmarcetic/test/tree/master/app
+https://github.com/RailsApps/rails3-bootstrap-devise-cancan/blob/master/app/models/user.rb
+https://github.com/RailsApps/rails-recurly-subscription-saas/blob/master/app/models/user.rb
+https://github.com/RailsApps/rails-prelaunch-signup
+https://github.com/RolifyCommunity/rolify/wiki/FAQ
+
+https://demos5.softaculous.com/PrestaShop/admin123
+
+Admin Username: demos@softaculous.com
+Admin Password: password
+
+http://webapplayers.com/inspinia_admin-v2.2/buttons.html
+http://qiita.com/NAKANO_Akihito/items/d42a6ceae40933af2352
+https://github.com/vmarcetic/test/blob/master/db/schema.rb
+https://github.com/RailsApps/rails3-bootstrap-devise-cancan/blob/master/db/schema.rb
+http://info.pagnis.in/acts_as_list/
+http://easyactiverecord.com/blog/2014/11/11/sorting-and-reordering-lists-with-the-actsaslist-gem/
+https://github.com/stefankroes/ancestry
+http://everydayrails.com/2010/11/16/rails-ancestry-tree.html
+
+http://blog.goodsense.io/2013/06/13/acts-as-taggable-on-another-reason-out-of-a-million-to-learn-rails/
+http://stackoverflow.com/questions/19556843/trouble-saving-tags-in-ruby-on-rails-4-with-acts-as-taggable
+http://alexmuraro.me/posts/acts-as-taggable-on-a-short-tutorial/
+http://railscasts.com/episodes/382-tagging
+https://github.com/mbleigh/acts-as-taggable-on
+http://easyactiverecord.com/blog/2014/10/21/tagging-your-content-using-the-acts-as-taggable-on-gem/
+http://blog.andolasoft.com/2013/01/how-to-do-tagging-in-rails-with-gem-acts_as_taggable_on.html#
+https://rcode5.wordpress.com/2013/03/07/acts_as_taggable_on-select2-super-easy-tags-in-rails/
+http://www.reddit.com/r/rails/comments/2chtgw/tagging_in_rails_4/
+
+https://gorails.com/episodes/forum-nested-attributes-and-fields-for
+https://github.com/apotonick/reform
+https://github.com/excid3/gorails-forum
+https://github.com/excid3/gorails-episode-47
+https://gorails.com/episodes/forum-notification-emails-and-previews
+https://gorails.com/episodes/sending-emails-with-mandrill
+https://gorails.com/episodes/keeping-track-with-annotate
+https://gorails.com/episodes/pagination-with-will-paginate
+https://gorails.com/episodes/pretty-urls-with-friendly-id
+https://gorails.com/episodes/named-scopes-with-activerecord-merge
+https://gorails.com/episodes/sending-data-between-controllers-and-views
+https://gorails.com/episodes/the-params-hash
+https://gorails.com/episodes/comments-with-polymorphic-associations
+https://gorails.com/episodes/file-uploads-with-refile
+https://gorails.com/episodes/forms-with-multiple-submit-buttons
+https://gorails.com/episodes/forum-time-zones-with-local_time
+https://gorails.com/episodes/newsletter-sign-up
+https://gorails.com/episodes/multitenancy-with-apartment
+https://gorails.com/episodes/pdf-receipts
+
+Create roles use Polymorphic associations can be perplexing.
+I to set it up in Active Record and then move to the controller and view layer.
+
+Using gem package Rolify
+
+  bash> rails g rolify Role User
+  bash> rake db:migrate
+
+To define a global role: admin for user with id:1
+
+  pry> User.all
+  pry> User.find(1)
+  pry> user = User.find(1)
+  pry> user.add_role :admin
+
+To define a role scoped to a resource instance:
+
+  pry> User.all
+  pry> User.find(2)
+  pry> user.add_role :moderator, Forum.first
+
+To define a role scoped to a resource class:
+
+  pry> User.all
+  pry> User.find(3)
+  pry> user = User.find(3)
+  pry> user.add_role :moderator, Forum
+
+That's it !
+
+Roles:
+
+          admin        => all
+          distributor  => only show and create orders, send email
+          manufactured => only new in has been created categories
+          accounter    =>
+          moderator    => edit
+          agent        => edit products edit users,  ???? and rules calls between companies
+          simple buyer => only show & search products and add favorite products
+
+
+
+Catalog:
+  Categories:
+    Name              name:               string
+    Displayed         displayed:          boolean   yes/no
+    Parent category   ancestry:           string    add_ancestry_to_category ancestry:string
+    Description       description:        text      lang_select: en,ru,uk, ckedit
+    Image             avatar_id:          string
+    Meta title        meta_title:         string    lang_select: en,ru,uk
+    Meta description  meta_description:   string    lang_select: en,ru,uk
+    Meta keywords     meta_keywords:      string    lang_select: en,ru,uk
+    Group access      role_id:            integer
+
+    Step #1
+    user_id:            references
+    name:               string
+    displayed:          boolean
+    description:        text
+    meta_title:         string
+    meta_description:   string
+    meta_keywords:      string
+    avatar_id:          string
+
+    STEP #2
+    Group access: role_id:integer
+
+  Products:
+    name:string
+    reference code:
+    barcode:
+    enable:boolean
+    visibility:boolean
+    description:text
+
+bash> rails g scaffold Company user:references name:string description:text status:boolean
+
+  Company:
+    name:string
+    description:text
+    logo:avatar_id
+    attachment:
+
+Orders:
+  Orders:
+  Invoices:
+  Merchandise Returns:
+  Delivery Slips:
+  Credit Slips:
+  Statuses:
+  Order Messages:
+
+Customers:
+  Custommers:
+  Addresses:
+  Groups:
+  Shopping Charts:
+  Customer Service:
+  Contacts:
+  Titles:
+
+Price Rules:
+  Cart Rules:
+  Catalog Price Rules:
+  Marketing:
+
+Localizations:
+  Localization:
+  Languages:
+  Zones:
+  Countries:
+  States:
+  Currencies:
+  Taxes:
+  Tax Rules:
+  Translations:
+
+Preferences:
+  General:
+  Orders:
+  Products:
+  Customers:
+  CMS:
+  Images:
+  Store Contacts:
+  Search:
+
+Administration:
+  Preferences:
+  Quick Access:
+  Employsees:
+  Profiles:
+  Permissions:
+  Menus:
+
+Stats:
+  Stats:
+  Search Engines:
+  Referrers:
+

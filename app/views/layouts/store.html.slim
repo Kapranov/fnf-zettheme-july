@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    title
+      = content_for?(:title) ? yield(:title) : 'FnF e-store'
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'FnF Zettheme'}"
+    == stylesheet_link_tag "store", :media => 'all'
+    == javascript_include_tag 'store'
+    == csrf_meta_tags
+  body.top-navigation
+    == yield

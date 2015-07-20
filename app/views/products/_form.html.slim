@@ -1,0 +1,283 @@
+= stylesheet_link_tag "products", :media => 'all'
+= javascript_include_tag 'products'
+
+.wrapper.wrapper-content.animated.fadeInRight.ecommerce
+  .row
+    .col-lg-12
+      = simple_form_for(@product, html: {multipart: true}) do |f|
+        = f.error_notification
+        .tabs-container
+          ul.nav.nav-tabs
+            li.active
+              a[aria-expanded="true" data-toggle="tab" href="#tab-1"] = t('Product info')
+            li
+              a[aria-expanded="false" data-toggle="tab" href="#tab-2"] = t('Product description')
+            li
+              a[aria-expanded="false" data-toggle="tab" href="#tab-3"] = t('Product data')
+            /li
+              a[aria-expanded="false" data-toggle="tab" href="#tab-4"] = t('Images')
+            li
+              a[aria-expanded="false" data-toggle="tab" href="#tab-5"] = t('Property')
+            li
+              a[aria-expanded="false" data-toggle="tab" href="#tab-6"] = t('Attachments')
+            li
+              .form-actions
+                = f.submit t('Save'), class: "btn btn-info btn-block"
+          .tab-content
+            #tab-1.tab-pane.active
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-2.control-label = t('Categories')
+                    .col-sm-4
+                      .form-inputs
+                        = f.association :category, collection: Category.all, label: false, include_blank: false, prompt: t('Choose category')
+                  .form-group
+                    label.col-sm-2.control-label = t('Name')
+                    .col-sm-4
+                      .form-inputs
+                        = f.input :name, label: false, placeholder: t('Product name')
+                    .col-sm-2
+                      button.btn.btn-danger.btn-xs.dropdown-toggle[data-toggle="dropdown"]
+                        = t('menu.languages.lang')
+                        '
+                        span.caret
+                      ul.dropdown-menu[role="menu"]
+                        li = link_to t('menu.languages.en'), change_locale_path(:en)
+                        li = link_to t('menu.languages.ru'), change_locale_path(:ru)
+                        li = link_to t('menu.languages.uk'), change_locale_path(:uk)
+                  .form-group
+                    label.col-sm-2.control-label = t('Product sku')
+                    .col-sm-4
+                      .form-inputs
+                        = f.input :sku, label: false, placeholder: t('Product sku')
+                    .col-sm-2
+                      button.btn.btn-danger.btn-xs.dropdown-toggle[data-toggle="dropdown"]
+                        = t('menu.languages.lang')
+                        '
+                        span.caret
+                      ul.dropdown-menu[role="menu"]
+                        li = link_to t('menu.languages.en'), change_locale_path(:en)
+                        li = link_to t('menu.languages.ru'), change_locale_path(:ru)
+                        li = link_to t('menu.languages.uk'), change_locale_path(:uk)
+                  .form-group
+                    label.col-sm-2.control-label = t('Active')
+                    .col-sm-1
+                      .form-inputs
+                        = f.input :active, label: false
+                  .form-group
+                    label.col-sm-2.control-label = t('Featured')
+                    .col-sm-2
+                      .form-inputs
+                        = f.input :featured, label: false
+                  .form-group
+                    label.col-sm-2.control-label = t('Stock control')
+                    .col-sm-2
+                      .form-inputs
+                        = f.input :stock_control, label: false
+            #tab-2.tab-pane
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-2.control-label = t('Description')
+                    .col-sm-8
+                      .form-inputs
+                        = f.input :description, label: t('Name description'), input_html: { class: 'summernote' }
+                    .col-sm-2
+                      button.btn.btn-danger.btn-xs.dropdown-toggle[data-toggle="dropdown"]
+                        = t('menu.languages.lang')
+                        '
+                        span.caret
+                      ul.dropdown-menu[role="menu"]
+                        li = link_to t('menu.languages.en'), change_locale_path(:en)
+                        li = link_to t('menu.languages.ru'), change_locale_path(:ru)
+                        li = link_to t('menu.languages.uk'), change_locale_path(:uk)
+                  .form-group
+                    label.col-sm-2.control-label = t('Other description')
+                    .col-sm-8
+                      .form-inputs
+                        = f.input :short_description, label: t('Name short description'), input_html: { class: 'summernote' }
+                    .col-sm-2
+                      button.btn.btn-danger.btn-xs.dropdown-toggle[data-toggle="dropdown"]
+                        = t('menu.languages.lang')
+                        '
+                        span.caret
+                      ul.dropdown-menu[role="menu"]
+                        li = link_to t('menu.languages.en'), change_locale_path(:en)
+                        li = link_to t('menu.languages.ru'), change_locale_path(:ru)
+                        li = link_to t('menu.languages.uk'), change_locale_path(:uk)
+            #tab-3.tab-pane
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-2.control-label = t('Weight')
+                    .col-sm-2
+                      .form-inputs
+                        /= f.input :weight, label: t('Name weight')
+                        = f.text_field :weight, class: 'form-control', value: "%.2f" % f.object.weight.to_f
+                  .form-group
+                    label.col-sm-2.control-label = t('Price')
+                    .col-sm-2
+                      .form-inputs
+                        /= f.input :price, label: t('Name price')
+                        = f.text_field :price, class: 'form-control', value: "%.2f" % f.object.price.to_f
+                        /= f.text_field :price, :class => 'form-control', :value => (number_with_precision(f.object.price, :precision => 2) || 0)
+                        /number_to_currency(amount, unit: '€', precision: 2, format: "%u %n")
+                        /= f.text_field :price, class: 'form-control', value: (number_to_currency(amount, unit: '€', precision: 2, format: "%u %n"))
+                  .form-group
+                    label.col-sm-2.control-label = t('Cost price')
+                    .col-sm-2
+                      .form-inputs
+                        = f.text_field :cost_price, class: 'form-control', value: "%.2f" % f.object.cost_price.to_f
+            /#tab-4.tab-pane
+              .panel-body
+                .table-responsive
+                  table.table.table-bordered.table-stripped
+                    thead
+                      tr
+                        th Image preview
+                        th Image url
+                        th Sort order
+                        th Actions
+                    tbody
+                      tr
+                        td
+                          img[src="1_files/2s.jpg"]
+                        td
+                          input.form-control[disabled="disabled" value="http://mydomain.com/images/image1.png" type="text"]
+                        td
+                          input.form-control[value="1" type="text"]
+                        td
+                          button.btn.btn-white
+                            i.fa.fa-trash
+                      tr
+                        td
+                          img[src="1_files/1s.jpg"]
+                        td
+                          input.form-control[disabled="disabled" value="http://mydomain.com/images/image2.png" type="text"]
+                        td
+                          input.form-control[value="2" type="text"]
+                        td
+                          button.btn.btn-white
+                            i.fa.fa-trash
+                      tr
+                        td
+                          img[src="1_files/3s.jpg"]
+                        td
+                          input.form-control[disabled="disabled" value="http://mydomain.com/images/image3.png" type="text"]
+                        td
+                          input.form-control[value="3" type="text"]
+                        td
+                          button.btn.btn-white
+                            i.fa.fa-trash
+                      tr
+                        td
+                          img[src="1_files/4s.jpg"]
+                        td
+                          input.form-control[disabled="disabled" value="http://mydomain.com/images/image4.png" type="text"]
+                        td
+                          input.form-control[value="4" type="text"]
+                        td
+                          button.btn.btn-white
+                            i.fa.fa-trash
+                      tr
+                        td
+                          img[src="1_files/5s.jpg"]
+                        td
+                          input.form-control[disabled="disabled" value="http://mydomain.com/images/image5.png" type="text"]
+                        td
+                          input.form-control[value="5" type="text"]
+                        td
+                          button.btn.btn-white
+                            i.fa.fa-trash
+                      tr
+                        td
+                          img[src="1_files/6s.jpg"]
+                        td
+                          input.form-control[disabled="disabled" value="http://mydomain.com/images/image6.png" type="text"]
+                        td
+                          input.form-control[value="6" type="text"]
+                        td
+                          button.btn.btn-white
+                            i.fa.fa-trash
+                      tr
+                        td
+                          img[src="1_files/7s.jpg"]
+                        td
+                          input.form-control[disabled="disabled" value="http://mydomain.com/images/image7.png" type="text"]
+                        td
+                          input.form-control[value="7" type="text"]
+                        td
+                          button.btn.btn-white
+                            i.fa.fa-trash
+            /#tab-4.tab-pane
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-2.control-label = t('Attachments')
+                    .col-sm-10
+                      .form-inputs
+                        #uploads
+                          = f.label :uploads_avatars
+                          = f.attachment_field :uploads_avatars, multiple: true
+            #tab-5.tab-pane
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-2.control-label = t('Property')
+                    .col-sm-7
+                      .form-inputs
+                        #properties
+                          = f.simple_fields_for :properties do |property|
+                            = render 'property_fields', :f => property
+                          .links.animated.fadeInLeft
+                            /= link_to_add_association t('add properties'), f, :properties, class: "btn btn-info btn-rounded btn-block"
+                            /= link_to_add_association '<i class="fa fa-newspaper-o size-14"></i>'.html_safe  + ' ' +  t('add').html_safe, f, :properties
+                            = link_to_add_association f, :properties, data: {:'cocoon-limit' => 5}, class: "btn btn-warning btn-outline fa fa-newspaper-o size-12" do
+                              You = t('add')
+                              |
+                              '
+                              b data={counter: ""}
+                              items
+
+            #tab-6.tab-pane
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-3.control-label = t('Images and Documents')
+                    .col-sm-5
+                      .form-inputs
+                        #properties
+                          = f.simple_fields_for :attachments do |attachment|
+                            = render 'attachment_fields', :f => attachment
+                          .links.animated.fadeInLeft
+                            /= link_to_add_association '<i class="fa fa-file-photo-o size-20"></i>'.html_safe  + ' ' +  t('add').html_safe, f, :attachments
+                            = link_to_add_association f, :attachments, data: {:'cocoon-limit' => 3}, class: "btn btn-warning btn-outline fa fa-file-photo-o size-12" do
+                              You = t('add')
+                              |
+                              '
+                              b data={counter: ""}
+                              items
+      .col-sm-4
+        .links.animated.rotateIn
+          = link_to '<i class="fa fa-reply size-14"></i>'.html_safe, products_path
+          '
+          |
+          i.badge.badge-warning = t('Back')
+          '
+          = t('Or')
+          |
+          '
+          = link_to '<i class="fa fa-eye size-14"></i>'.html_safe, @product
+          '
+          |
+          i.badge.badge-info = t('Show')
+        /.form-group
+          .col-sm-7
+            .form-actions
+              .col-sm-3
+                = f.submit t('Save'), class: "btn btn-info btn-block"
+              .col-sm-3
+                = link_to t('Back'), categories_path, class: "btn btn-info btn-block"
+javascript:
+  $('#properties').cocoon_limiter()

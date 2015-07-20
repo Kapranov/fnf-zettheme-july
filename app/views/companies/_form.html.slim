@@ -1,0 +1,130 @@
+= stylesheet_link_tag "companies", :media => 'all'
+= javascript_include_tag 'companies'
+
+.wrapper.wrapper-content.animated.fadeInRight.ecommerce
+  .row
+    .col-lg-12
+      = simple_form_for(@company) do |f|
+        = f.error_notification
+        .tabs-container
+          ul.nav.nav-tabs
+            li.active
+              a[aria-expanded="true" data-toggle="tab" href="#tab-1"] = t('Company info')
+            li
+              a[aria-expanded="true" data-toggle="tab" href="#tab-2"] = t('Logo Company')
+            li
+              a[aria-expanded="true" data-toggle="tab" href="#tab-3"] = t('Attachments')
+            li
+              .form-actions
+                = f.submit t('Save'), class: "btn btn-info btn-block"
+          .tab-content
+            #tab-1.tab-pane.active
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-2.control-label = t('User name')
+                    .col-sm-4
+                      .form-inputs
+                        = f.association :user, collection: User.all, label: false, include_blank: false, prompt: t('Choose users')
+                  .form-group
+                    label.col-sm-2.control-label = t('Name')
+                    .col-sm-4
+                      .form-inputs
+                        = f.input :name, label: false, placeholder: t('Company name')
+                    .col-sm-2
+                      button.btn.btn-danger.btn-xs.dropdown-toggle[data-toggle="dropdown"]
+                        = t('menu.languages.lang')
+                        '
+                        span.caret
+                      ul.dropdown-menu[role="menu"]
+                        li = link_to t('menu.languages.en'), change_locale_path(:en)
+                        li = link_to t('menu.languages.ru'), change_locale_path(:ru)
+                        li = link_to t('menu.languages.uk'), change_locale_path(:uk)
+                  .form-group
+                    label.col-sm-2.control-label = t('Description')
+                    .col-sm-8
+                      .form-inputs
+                        = f.input :description, label: t('Description Company'), input_html: { class: 'summernote' }
+                    .col-sm-2
+                      button.btn.btn-danger.btn-xs.dropdown-toggle[data-toggle="dropdown"]
+                        = t('menu.languages.lang')
+                        '
+                        span.caret
+                      ul.dropdown-menu[role="menu"]
+                        li = link_to t('menu.languages.en'), change_locale_path(:en)
+                        li = link_to t('menu.languages.ru'), change_locale_path(:ru)
+                        li = link_to t('menu.languages.uk'), change_locale_path(:uk)
+                  .form-group
+                    label.col-sm-2.control-label = t('Status')
+                    .col-sm-2
+                      .form-inputs
+                        = f.input :status, label: false
+                        '
+                        = t('yes or no')
+            #tab-2.tab-pane
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-2.control-label = t('Attachments')
+                    .col-sm-4
+                      .form-inputs
+                        #uploads.well.nested-fields.animated.fadeInDown
+                          = f.label t('Logo')
+                          br
+                          /= f.attachment_field :uploads_avatars, fallback: "images.png", direct: true, presigned: true , multiple: true
+                          - if @company.uploads_avatars.present?
+                            - @company.uploads.each do |upload|
+                              = image_tag attachment_url(upload, :avatar, :fill, 280, 130), class: 'img-thumbnail'
+                              /= check_box_tag 'company[remove_uploads_avatars_ids[]]', upload.id?
+                              /= f.check_box :uploads_avatars
+                              div[style="padding-left:15px"]
+                                = f.input :_destroy, as: 'boolean', label: t('Remove avatar')
+                              = f.label t('Add or Change Avatar')
+                              = f.attachment_field :uploads_avatars, fallback: "images.png", direct: true, presigned: true , multiple: true
+                            br
+                          - else
+                            h3 = t('Add or Change Avatar')
+                            = image_tag 'images.png', size: "80", class: "img-thumbnail"
+                            = f.attachment_field :uploads_avatars, fallback: "images.png", direct: true, presigned: true , multiple: true
+                          /br
+                          /= f.attachment_field :uploads_avatars, fallback: "images.png", direct: true, presigned: true , multiple: true
+            #tab-3.tab-pane
+              .panel-body
+                fieldset[class="form-horizontal"]
+                  .form-group
+                    label.col-sm-3.control-label = t('Images and Documents')
+                    .col-sm-5
+                      .form-inputs
+                        #companies
+                          = f.simple_fields_for :attachments do |attachment|
+                            = render 'attachment_fields', :f => attachment
+                          .links.animated.fadeInLeft
+                            = link_to_add_association f, :attachments, data: {:'cocoon-limit' => 3}, class: "btn btn-warning btn-outline fa fa-file-photo-o size-12" do
+                              You = t('add')
+                              |
+                              '
+                              b data={counter: ""}
+                              items
+      .col-sm-4
+        .links.animated.rotateIn
+          = link_to '<i class="fa fa-reply size-14"></i>'.html_safe, companies_path
+          '
+          |
+          i.badge.badge-warning = t('Back')
+          '
+          = t('Or')
+          |
+          '
+          = link_to '<i class="fa fa-eye size-14"></i>'.html_safe, @company
+          '
+          |
+          i.badge.badge-info = t('Show')
+
+        /.form-inputs
+          = f.association :user
+          = f.input :name
+          = f.input :description
+          = f.input :status
+
+        /.form-actions
+          = f.button :submit

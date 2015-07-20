@@ -1,0 +1,33 @@
+.container
+  .row
+    .col-xs-6
+      h1 = link_to t('Shopping'), store_path
+    .col-xs-6.text-right
+      h1.cart-text = render 'layouts/cart_text'
+/hr
+/#store
+  .row
+    .col-xs-12.col-sm-5.col-md-5
+      .input-group
+        span.input-group-addon
+          i.fa.fa-search
+        .input-sm.form-control
+    .col-xs-12.hidden-sm.hidden-md.hidden-lg &nbsp;
+    .col-xs-12.col-sm-7.col-md-7
+      .text-auto
+        span.hidden-xs.hidden-sm
+          small = t('Sort')
+        .btn-group.btn-group-sm
+          .btn.btn-default
+          .btn.btn-default
+          .btn.btn-default
+        span.hidden-xs.hidden-sm
+          small = t('View')
+        .btn-group.btn-group-sm.hidden-xs
+        span.hidden-xs.hidden-sm
+          small= t('Per page')
+        .btn-group
+  hr.line
+
+  /.row.hidden-xs
+    .col-xs-12.col-sm-12.col-md-12

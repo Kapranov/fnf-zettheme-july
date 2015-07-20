@@ -1,0 +1,82 @@
+nav.navbar-default.navbar-static-side[role="navigation"]
+  .sidebar-collapse
+    ul.nav#side-menu
+      li.nav-header
+        .dropdown.profile-element
+          - if current_user.avatar_id?
+            span
+              = image_tag attachment_url(current_user, :avatar, :fill, 80, 80), class: 'img-circle'
+          - else
+            = image_tag 'images.png', size: "100", class: "img-thumbnail"
+          a[data-toggle="dropdown" class="dropdown-toggle" href="#"]
+            span.clear
+              span.block.m-t-xs
+                - if current_user.avatar_id?
+                  strong.font-bold = current_user.name
+              span.text-muted.text-xs.block.size8
+                '
+                = t('Avatar menu')
+                '
+                b.caret
+          ul.dropdown-menu.animated.fadeInRight.m-t-xs
+            li
+              a[href="profile.html"] = t('Profile')
+            li
+              a[href="contacts.html"] = t('Contacts')
+            li
+              a[href="mailbox.html"] = t('Mailbox')
+            li.divider
+            li = link_to t('Logout'), destroy_user_session_path, :method=>'delete'
+        .logo-element FnF
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-th-large
+          span.nav-label = t('Dashboard')
+      li
+        a[href="#{url_for :controller => 'companies', :action => 'index'}"]
+          i.fa.fa-ioxhost
+          span.nav-label = t('Companies')
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-newspaper-o
+          span.nav-label = t('Catalog')
+          span.fa.arrow
+        ul.nav.nav-second-level
+          li
+            a[href="#{url_for :controller => 'categories', :action => 'index'}"] = t('Categories')
+          li
+            a[href="#{url_for :controller => 'products', :action => 'index'}"] = t('Products')
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-edit
+          span.nav-label = t('Orders')
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-globe
+          '
+          span.nav-label = t('menu.panels.lang')
+          span.fa.arrow
+        ul.nav.nav-second-level
+          li = link_to t('menu.panels.en'), change_locale_path(:en)
+          li = link_to t('menu.panels.ru'), change_locale_path(:ru)
+          li = link_to t('menu.panels.uk'), change_locale_path(:uk)
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-cogs
+          span.nav-label = t('Administration')
+          span.fa.arrow
+        ul.nav.nav-second-level
+          li
+            a[href="#{url_for :controller => 'dashboards', :action => 'index'}"] = t('Manage roles')
+          li
+            a[href="#{url_for :controller => 'dashboards', :action => 'index'}"] = t('Manage users')
+      li.landing_link
+        a[target="_blank" href="#{url_for :controller => 'landing', :action => 'index'}"]
+          i.fa.fa-star
+          span.nav-label = t('Landing Page')
+          span.label.label-warning.pull-right
+      li.landing_link
+        a[target="_blank" href="#{url_for :controller => 'store', :action => 'index'}"]
+          i.fa.fa-shopping-cart
+          span.nav-label = t('E-commerce')
+          span.label.label-warning.pull-right

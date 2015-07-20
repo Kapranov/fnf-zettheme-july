@@ -1,0 +1,189 @@
+br
+.row.wrapper.animated.fadeInRight
+  .col-lg-8
+    .ibox.float-e-margins
+      .ibox-title
+        h5
+        .ibox-tools
+          a.collapse-link
+            i.fa.fa-chevron-up
+          a.dropdown-toggle[data-toggle="dropdown" href="#"]
+            i.fa.fa-wrench
+          ul.dropdown-menu.dropdown-user
+            li
+              a[href="#"] Config option 1
+            li
+              a[href="#"] Config option 2
+          a.close-link
+            i.fa.fa-times
+      .ibox-content
+        .row
+          .col-sm-10
+            p
+              strong = t('Name')
+              | :
+              '
+              = @product.name
+            p
+              strong = t('Category')
+              | :
+              '
+              = @product.category
+            p
+              strong = t('Product sku')
+              | :
+              '
+              = @product.sku
+            p
+              strong = t('Description')
+              | :
+              '
+              = @product.description.html_safe
+            p
+              strong = t('Short description')
+              | :
+              '
+              = @product.short_description.html_safe
+            p
+              - if @product.active
+                strong = t('Active')
+                | :
+                '
+                span.label.label-primary = t('Enabled')
+              - else
+                strong = t('Active')
+                | :
+                '
+                span.label.label-danger = t('Disabled')
+            p
+              strong = t('Weight')
+              | :
+              '
+              = @product.weight
+              '
+              strong = t('Price')
+              | :
+              '
+              = number_to_currency @product.price
+              '
+              strong = t('Cost price')
+              | :
+              '
+              = number_to_currency @product.cost_price
+            p
+              - if @product.featured
+                strong = t('Featured')
+                | :
+                '
+                span.label.label-success = t('Done')
+              - else
+                strong = t('Featured')
+                | :
+                '
+                span.label.label-warning = t('None')
+
+              |
+              '
+              - if @product.stock_control
+                strong = t('Stock control')
+                | :
+                '
+                span.label.label-success = t('Done')
+              - else
+                strong = t('Stock control')
+                | :
+                '
+                span.label.label-warning = t('None')
+            p
+              strong = t('Property')
+              | :
+              '
+              - @product.properties.each do |property|
+                b = property.key
+                '
+                b = property.value
+            p
+              strong = t('Images and Documents')
+            .table-responsive
+              table.table.table-bordered.table-stripped
+                thead
+                  tr
+                    th = t('Image preview')
+                    th = t('Image filename')
+                    th = t('Image mime')
+                    th = t('Image size')
+                tbody
+                - @product.attachments.each do |attachment|
+                  tr
+                    td = attachment_image_tag(attachment, :attach, :fill, 60, 60)
+                    td = attachment.attach_filename
+                    td = attachment.attach_content_type
+                    td
+                      = attachment.attach_size
+                      '
+                      | Bytes
+    .col-sm-6
+      .links.animated.rotateIn
+        = link_to '<i class="fa fa-reply size-14"></i>'.html_safe, products_path
+        '
+        |
+        i.badge.badge-warning = t('Back')
+        '
+        = t('Or')
+        |
+        '
+        = link_to '<i class="fa fa-edit size-14"></i>'.html_safe, edit_product_path(@product)
+        '
+        |
+        i.badge.badge-info = t('Edit')
+    br
+    br
+    br
+
+/p#notice = notice
+/
+/p
+  strong User:
+  = @product.user
+/p
+  strong Name:
+  = @product.name
+/p
+  strong Sku:
+  = @product.sku
+/p
+  strong Description:
+  = @product.description.html_safe
+/p
+  strong Short description:
+  = @product.short_description.html_safe
+/p
+  strong Active:
+  = @product.active
+/p
+  strong Weight:
+  = @product.weight
+/p
+  strong Price:
+  = @product.price
+/p
+  strong Cost price:
+  = @product.cost_price
+/p
+  strong Featured:
+  = @product.featured
+/p
+  strong Stock control:
+  = @product.stock_control
+/p
+  strong Category:
+  = @product.category
+/p
+  - @product.uploads.each do |upload|
+    = attachment_image_tag(upload, :avatar, :fill, 100, 100)
+/p
+
+
+/= link_to 'Edit', edit_product_path(@product)
+/'|
+/= link_to 'Back', products_path

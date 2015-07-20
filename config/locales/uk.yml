@@ -1,0 +1,455 @@
+uk:
+  hello: "Привіт світ"
+  Catalog of products: "Каталог продукції"
+  Home: "На головну"
+  Features: "Особливості"
+  Team: "Команда"
+  Testimonials: "Відгуки"
+  Pricing: "Ціноутворення"
+  Contact: "Контакт"
+  Lorem_Ipsum: "Простий манекен тексту друку стилю Лорем Іпсам"
+  carusel_text_1: "Ми розробляємо"
+  carusel_text_2: "веб -додатки та"
+  carusel_text_3: "інтерфейси,"
+  carusel_text_4: "ми веб студія"
+  carusel_text_5: " "
+  READ MORE: "ЧИТАТИ ДАЛІ"
+  Inspinia Theme: "Zettheme Inc."
+  carusel_text_6: "Ми створюємо сенс"
+  carusel_text_7: "інтерфейси, які надихають ."
+  carusel_text_8: "Життя - гра , перше правило якої - вважати, що це зовсім не гра , а серйозно ."
+  Learn more: "Дізнатися більше"
+  Authorization: "Авторизація"
+  Login: "Ввійти"
+  Sign up: "Реєстрація"
+  Logout: "Вийти"
+  Username: "Ваш Логін"
+  Edit profile: "Редагувати профіль"
+  Catalog of products: "КАТАЛОГ ТОВАРІВ"
+  Please login in: "Будь ласка, увійдіть в ."
+  Password: "Пароль"
+  Forgot password: "Забули пароль?"
+  Do not have an account: "Немае аккаунта?"
+  Create an account: "Створити аккаунт"
+  we app framework: "веб розробка"
+  Sign up: "Зареєструватися"
+  Register to fnf: "Зареєструйся, на FnF"
+  Email: "Поштова скринька"
+  Password confirmation: "Підтвердження пароля"
+  Create account to see it in action: "Створити аккаунт, щоб побачити його в дії ."
+  Forgot your password: "Забули пароль?"
+  Send me reset password instructions: "Відправити мені інструкції"
+  Your surname: "Ім'я користувача"
+  Currently waiting: "В даний час чекає підтвердження для: "
+  Leave it blank: "Залиште це поле порожнім , якщо ви не хочете, щоб змінити його"
+  Current password: "Поточний пароль"
+  We need your current: "Нам потрібна ваш поточний пароль для підтвердження змін"
+  Update: "Оновлення"
+  Cancel my account: "Скасувати свій аккаунт"
+  Are you sure: "Ви впевнені?"
+  Or: "Або"
+  Show: "Показати"
+  Back: "Повернутися"
+  Edit: "Редагувати"
+  Your avatar: "Твоя фотографія"
+  Remove avatar: "Видалити аватар"
+  Avatar menu: "Персональна інформація"
+  Profile: "Профіль"
+  Contacts: "Контакти"
+  Mailbox: "Поштова скринька"
+  Dashboards: "Панелі"
+  Dashboard: "Панель"
+  Widgets: "Віджети"
+  Landing Page: "Цільова сторінка"
+  Search for something: "Пошук чогось ... "
+  Welcome to dashboard page: "Ласкаво просимо пан "
+  Manage roles: "Управління ролями"
+  Catalog: "Каталог"
+  Categories: "Категорії"
+  Listing categories: "Перелік категорії"
+  New category: "Нова категорія"
+  Create category: "Створити категорію"
+  Category name: "Назва категорії"
+  Name: "Назва"
+  Displayed: "Відображення"
+  Description: "Опис"
+  Meta title: "Мета назва"
+  Meta description: "Мета опис"
+  Meta keywords: "Мета ключові слова"
+  Upload: "Вкладення"
+  Enabled: "Включено"
+  Disabled: "Відключено"
+  Done: "Так"
+  None: "Ні"
+  Users: "Користувачі"
+  Action: "Дії"
+  Localizations: "Локалізації"
+  Save: "Зберегти"
+  yes or no: "Так чи ні"
+  Parent category: "Таксономія"
+  Tags separated by commas: "Ключові слова через кому"
+  Id: "№"
+  Products: "Товари"
+  Listing products: "Виведення списку продуктів"
+  Create products: "створити товар"
+  Product name: "Найменування товару"
+  Product sku: "SKU продукту"
+  Active: "Активність"
+  New Products: "Новий продукт"
+  Create product: "Створити продукт"
+  Choose category: "Виберіть категорію"
+  Category: "Категорія"
+  Name product: "Ім'я продукту"
+  Name sku: "Індіфікатор товару"
+  Name description: "Повний опис"
+  Name short description: "Короткий опис"
+  Short description: "Короткий опис"
+  Other description: "Інша опис"
+  Weight: "Вага"
+  Name weight: "Вага продукту"
+  Price: "Ціна"
+  Name price: "Діапазон цін"
+  Cost price: "Вартість"
+  Name cost price: "Діапазон собівартість"
+  Featured: "Рекомендовані"
+  Stock control: "Складський облік"
+  Product info: "Інформація про продукт"
+  Product data: "Дані продукту"
+  Product description: "Опис продукту"
+  Attachments: "Вкладення"
+  Telephone: "Телефон"
+  Telephones: "Телефони"
+  Cell phone: "Мобільний телефон"
+  Owner phone: "Власник телефону"
+  Properties of product: "Властивості продукту"
+  Property: "Властивості"
+  Property key: "Назва властивості"
+  Property value: "Значення властивості"
+  add properties: "Додати властивості"
+  remove properties: "Видалити властивості"
+  Configuration: "Конфігурація"
+  Collapse menu: "Згорнути меню"
+  Fixed sidebar: "Фіксований"
+  Top navbar: "Топ"
+  Boxed layout: "Штучниї макет"
+  Fixed footer: "Нижніе меню"
+  Skins: "Макети"
+  Default: "За Замовчуванням"
+  Blue light: "Синє світло"
+  Yellow Purple: "Жовтий/Фіолетовий"
+  Editing product: "Редагування продукта"
+  Product: "Продукт"
+  Edit products: "Редагувати продукт"
+  add: "Додати"
+  Images and Documents: "Зображення та документи"
+  Edit categories: "Редагувати категорії"
+  Are you sure: "Ви впевнені?"
+  User name: "Ім'я користувача"
+  User: "Користувач"
+  Company: "Компанія"
+  Companies: "Компанії"
+  Company name: "Назва компанії"
+  New Company: "Нова компанія"
+  Create Company: "Створити компанію"
+  Listing Companies: "Перелік компаній"
+  Editing companies: "Редагування компанії"
+  Edit Company: "Редагувати компанію"
+  Company info: "Інформація про компанію"
+  Description Company: "Опис компанії"
+  Searching Companies: "Пошук компаній"
+  Status: "Стан"
+  active: "Активний"
+  inactive: "Неактивний"
+  Administration: "Адміністрування"
+  Orders: "Замовлення"
+  Order: "Замовляти"
+  Logo Company: "Логотип компанії"
+  Logo: "Логотип у форматі JPG / PNG / GIF"
+  logo: "Логотип"
+  Add or Change Avatar: "Додати або Змінити Аватар:"
+  Searching categories: "Пошук категорії"
+  Listing Categories: "Перелік категорій"
+  Store: "Магазин"
+  E-commerce: "Інтернет магазин"
+  Items in Cart: "Товарів у кошику"
+  Shopping: "Купівля"
+  Products for Sale: "Товари для продажу"
+  Add to Cart: "Додати в кошик"
+  Unit Price: "Ціна за одиницю: "
+  There are no items: "Немає товарів у кошику. "
+  Please: "Будь ласка"
+  go back: "Поверніться"
+  and add some items: "і добавте деякі елементи в кошик"
+  Manage users: "Управління користувачами"
+  Sku: "Штрих код"
+  Image preview: "Зображення"
+  Image filename: "Назва"
+  Image mime: "Тип"
+  Image size: "Розмір"
+  Searching Products: "Пошук товарів"
+  Listing Products: "Перелік товарів"
+  Total Price: "Підсумкова ціна: "
+  Delete: "Видалити"
+  Update Quantity: "Оновити кількість"
+  delete the product: "Ви впевнені, що хочете видалити продукт "
+  from your cart: "з кошика"
+  menu:
+    panels:
+      lang: "Локалізація"
+      en: "Англійська"
+      ru: "Російська"
+      uk: "Українська"
+    languages:
+      lang: "Мова"
+      en: "Англійська"
+      ru: "Російська"
+      uk: "Українська"
+  date:
+    abbr_day_names:
+    - нд.
+    - пн.
+    - вт.
+    - ср.
+    - чт.
+    - пт.
+    - сб.
+    abbr_month_names:
+    -
+    - січ.
+    - лют.
+    - бер.
+    - квіт.
+    - трав.
+    - черв.
+    - лип.
+    - серп.
+    - вер.
+    - жовт.
+    - лист.
+    - груд.
+    day_names:
+    - неділя
+    - понеділок
+    - вівторок
+    - середа
+    - четвер
+    - п'ятниця
+    - субота
+    formats:
+      default: "%d.%m.%Y"
+      long: "%d %B %Y"
+      short: "%d %b"
+    month_names:
+    - 
+    - Січня
+    - Лютого
+    - Березня
+    - Квітня
+    - Травня
+    - Червня
+    - Липня
+    - Серпня
+    - Вересня
+    - Жовтня
+    - Листопада
+    - Грудня
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: близько %{count} години
+        many: близько %{count} годин
+        one: близько %{count} година
+        other: близько %{count} години
+      about_x_months:
+        few: близько %{count} місяців
+        many: близько %{count} місяців
+        one: близько %{count} місяця
+        other: близько %{count} місяця
+      about_x_years:
+        few: близько %{count} років
+        many: близько %{count} років
+        one: близько %{count} року
+        other: близько %{count} року
+      almost_x_years:
+        few: майже %{count} років
+        many: майже %{count} років
+        one: майже %{count} роки
+        other: майже %{count} років
+      half_a_minute: півхвилини
+      less_than_x_minutes:
+        few: менше %{count} хвилин
+        many: менше %{count} хвилин
+        one: менше %{count} хвилини
+        other: менше %{count} хвилини
+      less_than_x_seconds:
+        few: менше %{count} секунд
+        many: менше %{count} секунд
+        one: менше %{count} секунди
+        other: менше %{count} секунди
+      over_x_years:
+        few: більше %{count} років
+        many: більше %{count} років
+        one: більше %{count} року
+        other: більше %{count} року
+      x_days:
+        few: "%{count} дні"
+        many: "%{count} днів"
+        one: "%{count} день"
+        other: "%{count} дня"
+      x_minutes:
+        few: "%{count} хвилини"
+        many: "%{count} хвилин"
+        one: "%{count} хвилина"
+        other: "%{count} хвилини"
+      x_months:
+        few: "%{count} місяці"
+        many: "%{count} місяців"
+        one: "%{count} місяць"
+        other: "%{count} місяця"
+      x_seconds:
+        few: "%{count} секунди"
+        many: "%{count} секунд"
+        one: "%{count} секунда"
+        other: "%{count} секунди"
+    prompts:
+      day: День
+      hour: Година
+      minute: Хвилина
+      month: Місяць
+      second: Секунда
+      year: Рік
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: має бути прийнятий
+      blank: не може бути пустим
+      confirmation: не збігається з підтвердженням
+      empty: не може бути порожнім
+      equal_to: має дорівнювати %{count}
+      even: має бути парним
+      exclusion: зарезервовано
+      greater_than: має бути більше ніж %{count}
+      greater_than_or_equal_to: має бути більше ніж або дорівнювати %{count}
+      inclusion: не включено до переліку
+      invalid: недійсний
+      less_than: має бути менше ніж %{count}
+      less_than_or_equal_to: має бути менше ніж або дорівнювати %{count}
+      not_a_number: не число
+      not_an_integer: не э цілим числом
+      odd: має бути непарним
+      record_invalid: 'Виникли помилки: %{errors}'
+      taken: вже зайнятий
+      too_long:
+        few: занадто довгий (максимум %{count} знаки)
+        many: занадто довгий (максимум %{count} знаків)
+        one: занадто довгий (максимум %{count} знак)
+        other: занадто довгий (максимум %{count} знаку)
+      too_short:
+        few: занадто короткий (мінімум %{count} знаки)
+        many: занадто короткий (мінімум %{count} знаків)
+        one: занадто короткий (мінімум %{count} знак)
+        other: занадто короткий (мінімум %{count} знаку)
+      wrong_length:
+        few: неправильна довжина (має бути %{count} знаки)
+        many: неправильна довжина (має бути %{count} знаків)
+        one: неправильна довжина (має бути %{count} знак)
+        other: неправильна довжина (має бути %{count} знаку)
+    template:
+      body: 'Помилки виявлено в таких полях:'
+      header:
+        few: "%{model} не збережено через %{count} помилки"
+        many: "%{model} не збережено через %{count} помилок"
+        one: "%{model} не збережено через %{count} помилку"
+        other: "%{model} не збережено через %{count} помилки"
+  helpers:
+    select:
+      prompt: 'Оберіть: '
+    submit:
+      create: Створити %{model}
+      submit: Зберегти %{model}
+      update: Зберегти %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "₴"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            few: Мільярдів
+            many: Мільярдів
+            one: Мільярд
+            other: Мільярдів
+          million:
+            few: Мільйонів
+            many: Мільйонів
+            one: Мільйон
+            other: Мільйонів
+          quadrillion:
+            few: Квадрильйонів
+            many: Квадрильйонів
+            one: Кквадрильйон
+            other: Квадрильйонів
+          thousand:
+            few: Тисяч
+            many: Тисяч
+            one: Тисяча
+            other: Тисяч
+          trillion:
+            few: Трильйонів
+            many: Трильйонів
+            one: Трильйон
+            other: Трильйонів
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            few: байти
+            many: байтів
+            one: байт
+            other: байту
+          gb: ГБ
+          kb: кБ
+          mb: МБ
+          tb: ТБ
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " та "
+      two_words_connector: " і "
+      words_connector: ", "
+  time:
+    am: до полудня
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y, %H:%M"
+      short: "%d %b, %H:%M"
+    pm: по полудні

@@ -1,0 +1,117 @@
+br
+.row.wrapper.animated.fadeInRight
+  .col-lg-8
+    .ibox.float-e-margins
+      .ibox-title
+        h5 = t('Company info')
+        .ibox-tools
+          a.collapse-link
+            i.fa.fa-chevron-up
+          a.dropdown-toggle[data-toggle="dropdown" href="#"]
+            i.fa.fa-wrench
+          ul.dropdown-menu.dropdown-user
+            li
+              a[href="#"] Config option 1
+            li
+              a[href="#"] Config option 2
+          a.close-link
+            i.fa.fa-times
+      .ibox-content
+        .row
+          .col-sm-10
+            p
+              strong = t('Id')
+              | :
+              '
+              = @company.id
+            p
+              strong = t('Logo Company')
+              | :
+              '
+              /- @company.uploads.each do |upload|
+                = image_tag attachment_url(upload, :avatar, :fill, 80, 80), class: 'img-circle'
+              - if @company.uploads_avatars.present?
+                - @company.uploads.each do |upload|
+                  = image_tag attachment_url(upload, :avatar, :fill, 30, 30), class: 'img-circle img-thumbnail'
+                br
+              - else
+                = image_tag 'images.png', size: "120", class: "img-circle img-thumbnail"
+            p
+              strong = t('Name')
+              | :
+              '
+              = @company.name
+
+            p
+              strong = t('User name')
+              | :
+              '
+              = @company.user
+            p
+              strong = t('Description Company')
+              | :
+              '
+              = @company.description.html_safe
+
+            p
+              - if @company.status
+                strong = t('Status')
+                | :
+                '
+                span.label.label-primary = t('active')
+              - else
+                strong = t('Status')
+                | :
+                '
+                span.label.label-danger = t('inactive')
+            p
+              strong = t('Images and Documents')
+              | :
+              '
+              br
+              - @company.attachments.each do |attachment|
+                = attachment_image_tag(attachment, :attach, :fill, 60, 60)
+                small
+                  ul
+                    li
+                      = attachment.attach_content_type
+                    li
+                      = attachment.attach_filename
+                    li
+                      = attachment.attach_size
+                      '
+                      | Bytes
+
+    .col-sm-6
+      .links.animated.rotateIn
+        = link_to '<i class="fa fa-reply size-14"></i>'.html_safe, companies_path
+        '
+        |
+        i.badge.badge-warning = t('Back')
+        '
+        = t('Or')
+        |
+        '
+        = link_to '<i class="fa fa-edit size-14"></i>'.html_safe, edit_company_path(@company)
+        '
+        |
+        i.badge.badge-info = t('Edit')
+
+/p#notice = notice
+
+/p
+  strong User:
+  = @company.user
+/p
+  strong Name:
+  = @company.name
+/p
+  strong Description:
+  = @company.description
+/p
+  strong Status:
+  = @company.status
+
+/= link_to 'Edit', edit_company_path(@company)
+/'|
+/= link_to 'Back', companies_path

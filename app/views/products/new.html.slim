@@ -1,0 +1,17 @@
+.row.wrapper.border-bottom.white-bg.page-heading2
+  .col-lg-8
+    h2 = t('New Products')
+    ol.breadcrumb
+      li
+        a[href="#{url_for :controller => 'products', :action => 'index'}"] = t('Products')
+      li.active
+        strong = t('Create product')
+    br
+
+== render 'form'
+
+/h1 New product
+
+/== render 'form'
+
+/= link_to 'Back', products_path

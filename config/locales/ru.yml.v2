@@ -1,0 +1,224 @@
+ru:
+  ##################################
+  # ERRORS
+  ##################################
+  errors:
+    messages:
+      carrierwave_processing_error: 'Невозможно изменить размер изображения.'
+      carrierwave_integrity_error: 'Не является изображением.'
+      carrierwave_download_error: 'Невозможно загрузить файл. Попробуйте еще раз!'
+      extension_white_list_error: "Файл с таким расширением загружать запрещено!"
+  ##################################
+  # CONTROLLERS
+  ##################################
+  # Article
+  article_created_message: "Статья была успешно создана!"
+  article_updated_message: "Статья была успешно обновлена!"
+  article_deleted_message: "Статья была успешно удалена!"
+
+  # Photo
+  photo_created_message: "Фотографии были успешно сохранены в количестве:"
+  photo_updated_message: "Фотография была успешно обновлена!"
+  photo_destroyed_message: "Фотография была успешно удалена!"
+  photo_choose_one_before_upload: "Пожалуйста, выберите хотя бы одну фотографию перед загрузкой."
+
+  # Album
+  album_created_message: "Альбом был успешно создан!"
+  album_updated_message: "Альбом был успешно обновлен!"
+  album_deleted_message: "Альбом был успешно удален!"
+
+  # Contact
+  contact_updated_message: "Контакты успешно обновлены!"
+
+  # Welcome message
+  welcome_updated_message: "Привественное слово успешно обновлено!"
+
+  # Sermon
+  sermon_created_message: "Проповедь успешно добавлена!"
+  sermon_updated_message: "Проповедь успешно обновлена!"
+  sermon_deleted_message: "Проповедь успешно удалена!"
+  ##################################
+  # PAGINATION
+  ##################################
+  views:
+    pagination:
+      first: "&laquo; Первая"
+      last: "Последняя &raquo;"
+      previous: "&lsaquo; Предыдущая"
+      next: "Следующая &rsaquo;"
+      truncate: "..."
+  ##################################
+  # VIEWS
+  ##################################
+  all_views:
+    title:
+      flag: "Язык интерфейса"
+  articles:
+    index:
+      legend: "Статьи"
+      new_article_button: " Новая статья"
+      no_articles_message: "Здесь пока ничего нет."
+    new:
+      new_article_legend: "Новая статья"
+      create_article_button: "Создать"
+      cancel: "Отмена"
+    edit:
+      legend: "Редактировать статью"
+      update_button: "Обновить"
+      cancel_button: "Отменить"
+    edit_link:
+      change: " Изменить"
+      edit: "Редактировать"
+      delete: "Удалить"
+      confirm_message: "Вы уверены, что хотите удалить"
+      close: "Отмена"
+      modal_title: "Удаление статьи"
+    article:
+      read_article: "Читать дальше "
+  photos:
+    index:
+      new_photo_button: "Добавить фотографии"
+      no_photos: "Здесь пока ничего нет."
+      slideshow: "Показать фотографии "
+    new:
+      legend: "Добавление новых фотографий"
+      create: "Загрузить"
+      cancel: "Отмена"
+      file_hint: "Допустимые расширения: 'jpg', 'jpeg', 'gif', 'png'. Можно загружать сразу несколько файлов."
+    edit:
+      legend: "Редактировать фотографию"
+      update: "Обновить"
+      cancel: "Отмена"
+    photo:
+      change: " Изменить"
+      edit: "Редактировать"
+      delete: "Удалить"
+  contacts:
+    index:
+      legend: "Контакты и координаты"
+      edit_link: " Редактировать"
+    edit:
+      legend: "Редактирование контактных данных"
+      cancel_button: "Отмена"
+      update_button: "Обновить"
+  albums:
+    index:
+      legend: "Альбомы"
+      new_link: " Новый альбом"
+      no_albums_yet: "Здесь еще нет альбомов. Но скоро они появятся!"
+    new:
+      legend: "Создание нового альбома"
+      create_article_button: "Создать"
+      cancel: "Отмена"
+    album:
+      edit: "Редактировать"
+      delete: "Удалить"
+    edit:
+      legend: "Редактирование альбома"
+      update_button: "Обновить"
+      cancel_button: "Отмена"
+    delete:
+      modal_title: "Удаление альбома"
+      confirm_message: "Вы уверены, что хотите удалить альбом"
+      delete: "Удалить"
+      close: "Отменить"
+  sermons:
+    index:
+      legend: "Проповеди"
+      no_sermons: "Здесь пока ничего нет, но в скором времени оно появится!"
+    new:
+      legend: "Добавление проповеди"
+      create: "Загрузить"
+      cancel: "Отменить"
+      hint: "Вы можете загружать только файлы формата mp3"
+    show:
+      legend: "Проповеди"
+      change: " Изменить "
+      edit: "Редактировать"
+      delete: "Удалить"
+    edit:
+      legend: "Редактирование проповеди"
+      update: "Обновить"
+      cancel: "Отменить"
+    new_btn:
+      new_link: " Добавить проповедь"
+  layouts:
+    head:
+      title: "Официальный сайт церкви \"Преображение во Христе\""
+      description: "Официальный сайт церкви \"Преображение во Христе\" в городе Москва."
+    noscript:
+      title: "Внимание!"
+      message: "В вашем браузере выключен Javascript! Для корректной работы, пожалуйста, включите его!"
+    footer:
+      login_link: "Войти"
+      articles_link: "Статьи"
+      albums_link: "Альбомы"
+      sermons_link: "Проповеди"
+      contacts_link: "Контакты"
+    navbar_template:
+      home_link: "Главная"
+      articles_link: "Статьи"
+      photos_link: "Фотографии"
+      albums_link: "Альбомы"
+      sermons_link: "Проповеди"
+      contacts_link: "Контакты"
+      logout_link: "Выйти"
+      brand_name: "Преображение во Христе"
+      settings: "Настройки"
+    admin_panel:
+      panel_header: "Панель администратора"
+      users_link: "Пользователи"
+      data_header: "Материалы"
+      articles_link: "Статьи"
+    home:
+      last-photos: "Последние загруженные фотографии"
+  stats:
+    users_in_system:
+      legend: "Список пользователей"
+      admin_field: "Администратор?"
+      signin_count_field: "Число входов в систему"
+      current_ip_field: "Текущий ip зашедшего пользователя"
+      last_ip_field: "Ip с последнего подлючения пользователя"
+      current_date_of_sign_in_field: "Дата последнего подключения"
+      last_date_of_sign_in_field: "Дата предпоследнего подключения"
+      true_field: "Да"
+      false_field: "Нет"
+  shared:
+    article:
+      read_article: "Читать дальше"
+  homes:
+    index:
+      edit_link: " Редактировать"
+  welcome_messages:
+    edit:
+      legend: "Редактирование приветствия"
+      update_button: "Обновить"
+      cancel_button: "Отмена"
+  ##################################
+  # DEVISE
+  ##################################
+  devise:
+    sessions:
+      new:
+        title: "Вход"
+        sign_in_button: "Войти"
+    shared:
+      links:
+        forgot_password: "Забыли пароль?"
+        sign_up_link: "Зарегистрироваться!"
+        sign_in_link: "Уже зарегистрированы?"
+    registrations:
+      edit:
+        header: "Редактирование личных данных"
+        update_button: "Обновить"
+        password_hint: "Оставьте это поле пустым, если вы не хотите менять пароль"
+        current_password_hint: "Для смены пароля вам необходимо указать текущий пароль"
+    passwords:
+      new:
+        send_pass_instructions_button: "Выслать инструкцию для восстановления пароля"
+        title: "Забыли ваш пароль?"
+  ##################################
+  # CANCAN
+  ##################################
+  unauthorized:
+    default: "Для доступа к этой странице необходимо залогиниться."

@@ -1,0 +1,9 @@
+/*
+ *= require_self
+ *= require font-awesome
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.translation_missing { color: red; background: black; }

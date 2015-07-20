@@ -1,0 +1,79 @@
+source 'https://rubygems.org'
+
+ruby '2.2.2'
+
+gem 'rails', '4.2.3'
+gem 'rails-i18n'
+gem 'sqlite3'
+gem 'bootstrap-sass'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'jquery-rails'
+gem 'jbuilder'
+gem 'slim'
+gem 'slim-rails'
+gem 'figaro'
+gem 'simple_form'
+gem 'font-awesome-rails'
+gem 'cocoon'
+gem 'local_time'
+gem 'geocoder'
+gem 'globalize'
+gem 'globalize-accessors'
+# gem 'globalize3_helpers'
+gem 'devise'
+gem 'mini_magick'
+gem 'refile', require: "refile/rails", git: 'https://github.com/refile/refile.git', branch: 'master'
+gem 'refile-mini_magick'
+gem 'bootstrap_refile'
+gem 'rolify'
+gem 'activeuuid'
+gem 'money-rails'
+gem 'foreigner'
+gem 'ffaker'
+gem 'ruby-units'
+gem 'gettext_i18n_rails'
+# gem 'enum_to_sym'
+# gem 'anjlab-widgets'
+
+# Windows does not include zoneinfo files
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+group :development do
+  gem 'gettext', '>=3.1.6', require: false
+  gem 'ruby_parser', require: false
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rails-console'
+  gem 'capistrano-rbenv'
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'hub', :require=>nil
+  gem 'rb-fchange', :require=>false
+  gem 'rb-fsevent', :require=>false
+  gem 'rb-inotify', :require=>false
+end
+
+group :development, :test do
+  gem 'byebug'
+  gem 'web-console', '~> 2.2.1'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  gem 'rspec-rails'
+  gem 'fuubar'
+  gem 'simplecov', require: false
+  gem 'shoulda-matchers'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+end

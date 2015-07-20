@@ -1,0 +1,11 @@
+.row.wrapper.border-bottom.white-bg.page-heading2
+  .col-lg-8
+    h2 = t('New Company')
+    ol.breadcrumb
+      li
+        a[href="#{url_for :controller => 'companies', :action => 'index'}"] = t('Companies')
+      li.active
+        strong = t('Create Company')
+    br
+
+== render 'form'

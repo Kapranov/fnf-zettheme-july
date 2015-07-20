@@ -1,0 +1,71 @@
+.row.wrapper.border-bottom.white-bg.page-heading2
+  .col-lg-8
+    h2 = t('Company')
+    ol.breadcrumb
+      li
+        a[href="#{url_for :controller => 'companies', :action => 'index'}"] = t('Companies')
+      li.active
+        strong = t('Listing Companies')
+  .col-lg-3
+    .title-action
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline' type='button'>#{t('Create Company')}</button>".html_safe, new_company_path
+  .col-lg-1
+
+.wrapper.wrapper-content.animated.fadeInRight.ecommerce
+  .ibox-content.m-b-sm.border-bottom
+    .row
+      .col-sm-10
+        h2 = t('Searching Companies')
+    .row
+      .col-sm-3
+        .form-group
+          label.control-label[for="user_name"] = t('User name')
+          input[type="text" id="user_name" name="user_name" value="" placeholder="#{t('User name')}" class="form-control"]
+      .col-sm-5
+        .form-group
+          label.control-label[for="company_name"] = t('Company name')
+          input[type="text" id="company_name" name="company_name" value="" placeholder="#{t('Company name')}" class="form-control"]
+      .col-sm-2
+        .form-group
+          label.control-label[for="status"] = t('Status')
+          select[name="status" id="status" class="form-control"]
+            option[value="1" selected] = t('active')
+            option[value="0"] = t('inactive')
+  .row
+    .col-lg-12
+      .ibox
+        .ibox-content
+          h2 = t('Listing Companies')
+          table.footable.table.table-stripped.toggle-arrow-tiny[data-page-size="15"]
+            thead
+              tr
+                th = t('User')
+                th = t('logo')
+                th = t('Name')
+                th = t('Description')
+                th = t('Attachments')
+                th = t('Status')
+                th
+                th
+                th
+
+            tbody
+              - @companies.each do |company|
+                tr
+                  td = company.user
+                  td
+                    - company.uploads.each do |upload|
+                      = attachment_image_tag(upload, :avatar, :fill, 55, 25, class: "img-circle")
+                  td = company.name
+                  td = company.description.html_safe
+                  td
+                    - company.attachments.each do |attachment|
+                      = attachment_image_tag(attachment, :attach, :fill, 35, 35)
+                  td.footable-visible
+                    - if company.status
+                      span.label.label-primary = t('active')
+                    - else
+                      span.label.label-danger = t('inactive')
+                  td = link_to '<i class="fa fa-eye size-14"></i>'.html_safe, company
+                  td = link_to '<i class="fa fa-pencil size-14"></i>'.html_safe, edit_company_path(company)
+                  td = link_to '<i class="fa fa-trash size-14"></i>'.html_safe, company, data: {:confirm => t('Are you sure')}, :method => :delete

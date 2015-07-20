@@ -1,0 +1,19 @@
+.row.wrapper.border-bottom.white-bg.page-heading2
+  .col-lg-8
+    h2 = t('Catalog')
+    ol.breadcrumb
+      li
+        a[href="#{url_for :controller => 'categories', :action => 'index'}"] = t('Categories')
+      li.active
+        strong = t('Create category')
+    br
+
+== render 'form'
+
+
+
+/h1 New category
+
+/== render 'form'
+
+/= link_to 'Back', categories_path

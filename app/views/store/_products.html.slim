@@ -1,0 +1,4 @@
+- if @products.present?
+  - if current_view == 'grid'
+    .row
+      - @products.each_with_index do |product, index|
